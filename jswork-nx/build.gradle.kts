@@ -25,8 +25,3 @@ publishing {
         }
     }
 }
-
-tasks.register<Jar>("sourcesJar") {
-    archiveClassifier.set("sources")
-    from(sourceSets["main"].allSource)
-}
