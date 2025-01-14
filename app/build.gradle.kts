@@ -38,15 +38,17 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 }
 
-//publishing {
-//    publications {
-//        create<MavenPublication>("release") {
-//            afterEvaluate {
-//                from(components["release"]) // 使用 Library 的 Release 构建产物
-//            }
-//            groupId = "com.github.afeiship"
-//            artifactId = "jsw_nx"
-//            version = "1.0.0"
-//        }
-//    }
-//}
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.github.afeiship.jsw_nx"
+            artifactId = "jsw_nx"
+            version = "0.0.6"
+        }
+    }
+    repositories {
+        maven {
+            url = uri("https://jitpack.io")
+        }
+    }
+}
