@@ -1,6 +1,5 @@
 plugins {
     id("com.android.library")
-    id("org.jetbrains.kotlin.android")
     id("maven-publish")
 }
 
@@ -9,12 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.github.afeiship.jsw_nx"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
