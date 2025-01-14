@@ -44,7 +44,7 @@ publishing {
             from(components["release"]) // 发布 release 构建的产物
             groupId = "com.github.afeiship"
             artifactId = "jsw-nx"
-            version = "0.0.3"
+            version = "0.0.4"
         }
     }
 }
