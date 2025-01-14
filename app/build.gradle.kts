@@ -37,14 +37,3 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
-
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            from(components["release"]) // 发布 release 构建的产物
-            groupId = "com.github.afeiship"
-            artifactId = "jsw-nx"
-            version = "0.0.4"
-        }
-    }
-}
