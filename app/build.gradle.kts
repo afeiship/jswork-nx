@@ -37,3 +37,16 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
+
+//publishing {
+//    publications {
+//        create<MavenPublication>("release") {
+//            afterEvaluate {
+//                from(components["release"]) // 使用 Library 的 Release 构建产物
+//            }
+//            groupId = "com.github.afeiship"
+//            artifactId = "jsw_nx"
+//            version = "1.0.0"
+//        }
+//    }
+//}
