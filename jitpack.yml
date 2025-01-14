@@ -1,6 +1,2 @@
 jdk:
   - openjdk11
-
-build:
-  publish:
-    - ./gradlew publish
