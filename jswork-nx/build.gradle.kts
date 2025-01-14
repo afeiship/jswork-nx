@@ -13,8 +13,15 @@ dependencies {
 
 publishing {
     publications {
-        create<MavenPublication>("maven") {
-            from(components["java"])
+        create<MavenPublication>("release") {
+            groupId = "com.github.afeiship.jsw_nx"
+            artifactId = "jsw_nx"
+            version = "0.0.2"
+        }
+    }
+    repositories {
+        maven {
+            url = uri("https://jitpack.io")
         }
     }
 }
