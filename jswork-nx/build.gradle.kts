@@ -10,3 +10,11 @@ java {
 dependencies {
     implementation(libs.media3.common)
 }
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
+    }
+}
