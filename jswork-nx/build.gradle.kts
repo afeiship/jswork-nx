@@ -14,6 +14,9 @@ publishing {
             groupId = "com.github.afeiship.jsw_nx"
             artifactId = "jsw_nx"
             version = "0.0.2"
+
+            // 包含主编译输出
+            from(components["java"])
         }
     }
     repositories {
