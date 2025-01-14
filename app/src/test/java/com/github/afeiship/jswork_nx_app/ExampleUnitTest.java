@@ -1,4 +1,4 @@
-package com.github.afeiship.jsw_nx;
+package com.github.afeiship.jswork_nx_app;
 
 import org.junit.Test;
 

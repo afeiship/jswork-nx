@@ -1,6 +1,6 @@
-package com.github.afeiship.jsw_nx;
+package com.github.afeiship.jswork_nx.core;
 
-import android.util.Log;
+import androidx.media3.common.util.Log;
 
 public class Nx {
     public static void log(String message) {

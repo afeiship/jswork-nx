@@ -1,14 +1,18 @@
 plugins {
-    id("com.android.library")
-    id("maven-publish")
+    alias(libs.plugins.android.application)
 }
 
 android {
-    namespace = "com.github.afeiship.jsw_nx"
+    namespace = "com.github.afeiship.jswork_nx_app"
     compileSdk = 34
 
     defaultConfig {
+        applicationId = "com.github.afeiship.jswork_nx_app"
         minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -36,19 +40,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            groupId = "com.github.afeiship.jsw_nx"
-            artifactId = "jsw_nx"
-            version = "0.0.6"
-        }
-    }
-    repositories {
-        maven {
-            url = uri("https://jitpack.io")
-        }
-    }
 }

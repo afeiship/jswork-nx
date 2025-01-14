@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "jsw-nx"
+rootProject.name = "jswork-nx-app"
 include(":app")
+include(":jswork-nx")
