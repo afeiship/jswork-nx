@@ -1,8 +1,12 @@
 {
   "name": "@jswork/jswork-nx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "afeiship",
   "license": "MIT",
   "homepage": "https://js.work",
-  "description": "Another nx lib for java/android."
+  "description": "Another nx lib for java/android.",
+  "scripts": {
+    "release": "release-it"
+  },
+  "keywords": []
 }
