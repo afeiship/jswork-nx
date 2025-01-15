@@ -5,6 +5,9 @@
   "hooks": {
     "after:init": [
       "t2k"
+    ],
+    "after:bump": [
+      "syncv -p lib/build.gradle.kts"
     ]
   },
   "github": {
