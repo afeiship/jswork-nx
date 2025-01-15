@@ -13,7 +13,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.afeiship.jsw_nx"
             artifactId = "jsw_nx"
-            version = "0.0.6"
+            version = "0.0.7"
 
             // 包含主编译输出
             from(components["java"])
