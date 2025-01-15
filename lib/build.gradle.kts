@@ -3,9 +3,17 @@ plugins {
     id("maven-publish")
 }
 
+repositories {
+    mavenCentral()
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+    implementation("org.json:json:20210307")
 }
 
 publishing {
