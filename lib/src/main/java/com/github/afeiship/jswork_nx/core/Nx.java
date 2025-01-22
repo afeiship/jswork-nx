@@ -1,10 +1,9 @@
 package com.github.afeiship.jswork_nx.core;
 
 public class Nx {
-    public static void log(String message) {
+    public static void log(Object... messages) {
         String prefix = "🍏 [jsw-nx-log]: ";
-        message = prefix + message;
-        System.out.println(message);
+        logger(prefix, messages);
     }
 
     public static void error(String message) {
@@ -34,5 +33,17 @@ public class Nx {
     // sprintf use string format
     public static String sprintf(String format, Object... args) {
         return String.format(format, args);
+    }
+
+    private static void logger(String tag, Object... messages) {
+        StringBuilder logMessage = new StringBuilder();
+        for (Object msg : messages) {
+            if (msg != null) {
+                logMessage.append(msg.toString()).append(" ");
+            } else {
+                logMessage.append("null ");
+            }
+        }
+        System.out.println(tag + logMessage);
     }
 }
