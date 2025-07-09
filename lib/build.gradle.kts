@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     implementation("org.json:json:20210307")
-    implementation("com.google.code.gson:gson:2.11.0")
+    implementation("com.google.code.gson:gson:2.13.1")
     testImplementation(libs.junit.junit)
     testImplementation(libs.junit.jupiter)
 }
